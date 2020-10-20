@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'streamster';
+  src: url('./Streamster.ttf');
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html {
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "streamster";
+}
+
+h1 {
+  font-size: 5rem;
+  color: palevioletred;
+  letter-spacing: 5px;
+}
+
+.heading {
+  border-radius: 50%;
+  width: 50%;
+  margin: auto;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .7s ease-in;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.lyrics {
+  display: flex;
+  font-size: 125%;
+  letter-spacing: 2px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.text {
+  padding: 20px;
+}
